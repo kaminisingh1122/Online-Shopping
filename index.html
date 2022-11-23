@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+</head>
+<style>
+    body {
+        padding: 0px 0px;
+        margin: 0px 0px;
+    }
+
+    .box1 {
+        display: flex;
+        border: 2px solid black;
+        width: 100%;
+        padding: 23px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(1, 1, 10);
+    }
+
+    .box2 {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 30%;
+        padding: 10px;
+
+    }
+
+    input {
+        width: 70%;
+
+    }
+
+    p {
+        color: white;
+        font-size: 23px;
+        font-weight: bolder;
+    }
+
+    .box3 {
+        display: grid;
+
+        padding: 3vh 4vw;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(22, 22, 71);
+
+    }
+
+    .box3 li {
+        display: inline-block;
+        list-style: none;
+        margin: 3vh 3vw;
+        font-size: 23px;
+        font-weight: bolder;
+        color: white;
+        cursor: pointer;
+
+    }
+
+    .box3 li:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .img {
+
+        display: flex;
+        height: 500px;
+        width: 100%;
+
+
+    }
+
+    .box4 {
+        display: flex;
+        /* direction: horizontal; */
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+
+    }
+
+    .box5 {
+        display: flex;
+        border: 2px solid black;
+
+
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        animation-name: kamini;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes kamini {
+        from {
+            width: 500px;
+        }
+
+        To {
+            width: 100%;
+        }
+    }
+
+    .box6 {
+        font-size: 33px;
+        font-weight: bolder;
+        color: white;
+        padding: 54px 23px;
+    }
+
+    input {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box7 {
+
+        padding: 3vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 19px 13px;
+    }
+
+    #para3 {
+        font-size: 43px;
+        font-weight: bolder;
+
+    }
+
+    #para3:hover {
+        color: gray;
+        text-decoration: underline;
+    }
+
+    .box8 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 23px 23px;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .img2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 20vh;
+        width: 20vw;
+        border-radius: 74px;
+        justify-items: center;
+        margin: 12px;
+
+    }
+
+    .box9 {
+        display: flex;
+        padding: 5px 6px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 23px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 23px;
+        border-radius: 12px;
+    }
+
+    button:hover {
+        color: gray;
+        text-decoration: underline;
+        text-decoration-color: gray;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box1" id="para1">
+            <p>Hello Guys! Welcome to my shops👍</p>
+
+            <div class="box2" id="para2">
+
+
+                <select name="clothes" id="myclothes">
+                    <option value="all">All categories</option>
+                    <option value="kurti">Women Kurti</option>
+                    <option value="jeans">jeans</option>
+                    <option value="T-shirts">T-shirts</option>
+                    <option value="toys">Toys</option>
+                    <option value="Pants">Pants</option>
+                    <option value="Jewellery">Jewellery</option>
+                    <option value="shoes">Shoes</option>
+                    <option value="heels">Heels</option>
+                    <option value="Face products">Face Products</option>
+                    <option value="fancy dress">Fancy dress</option>
+                </select>
+                <input type="text" placeholder="Search for product style brands">
+
+            </div>
+
+        </div>
+        <div class="box3">
+            <navbar class="navbar">
+                <li><a href="women.html">Women</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="">Kids</a></li>
+                <li><a href="">Tech</a></li>
+                <li><a href="">All Brands</a></li>
+                <li><a href="">More</a></li>
+
+            </navbar>
+        </div>
+        <div class="box4">
+
+            <div> <img src="shops1.jpg" class="img"></div>
+            <div><img src="shops2.jpg" class="img"></div>
+            <div><img src="shops3.jpg" class="img"></div>
+
+        </div>
+        <div class="box5">
+            <div class="box6">
+                Up To
+                85% OFF Apply Now!
+
+            </div>
+
+        </div>
+        <div class="box7">
+            <div id="para3">
+                Most Popular Brands
+            </div>
+        </div>
+        <div class="box8">
+            <div><img src="brand1.jpg" class="img2"></div>
+            <div><img src="brand2.jpg" class="img2"></div>
+
+            <div><img src="brand4.jpg" class="img2"></div>
+            <div><img src="brand5.jpg" class="img2"></div>
+            <div><img src="jewellery1.jpg" class="img2"></div>
+            <div><img src="jewellery2.jpg" class="img2"></div>
+            <div><img src="jewellery3.jpg" class="img2"></div>
+            <div><img src="jewellery4.jpg" class="img2"></div>
+            <div><img src="shoes1.jpg" class="img2"></div>
+            <div><img src="shoes2.jpg" class="img2"></div>
+            <div><img src="shoes3.jpg" class="img2"></div>
+            <div><img src="shoes4.jpg" class="img2"></div>
+        </div>
+        <div class="box9">
+            <div>
+                <button>View All Products</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
